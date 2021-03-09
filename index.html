@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Teste Commcepta">
+        <meta name="author" content="Ubirajara Jucá">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#000000">
+
+        <title>TESTE FRONT-END COMMCEPTA</title>
+
+        <!-- Style-->  
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Font Google-->  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+        <!-- Plugins-->  
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    </head>
+
+<body>
+	<header>
+		<div class="container">
+			<a href="" class="pull-left"><img src="assets/img/logo.png" class="logo" height="66" width="224" alt=""></a>
+			<nav class="desktop">
+				<a href="">EMPRESA</a>
+				<a href="">SERVIÇOS</a>
+				<a href="">CONTATO</a>
+			</nav>
+			<nav class="mobile" role="navigation">
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<a href="#"><li>EMPRESA</li></a>
+						<a href="#"><li>SERVIÇOS</li></a>
+						<a href="#"><li>CONTATO</li></a>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="content">
+		<div class="container">
+			<section class="team">
+				<div class="box">
+					<div class="photo"><img id="foto_principal" src="assets/img/team/foto-alberto.jpg" alt=""></div>
+					<div class="info">
+						<span class="name">
+							<span>NOME:</span>
+							<small id="nome_principal">Alberto</small>
+						</span>
+						<span class="occupation">
+							<span>CARGO:</span> 
+							<small id="ocupacao_principal">Presidente</small>
+						</span>
+						<span class="age">
+							<span>IDADE:</span> 
+							<small id="idade_principal">46</small>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(1)">
+							<div class="photo"><img src="assets/img/team/foto-alberto.jpg" alt=""><div class="number">1</div></div>
+							<div class="info">
+								<span class="name">Alberto</span>
+								<span class="occupation">Presidente</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(2)">
+							<div class="photo"><img src="assets/img/team/foto-bruno.jpg" alt=""><div class="number">2</div></div>
+							<div class="info">
+								<span class="name">Bruno</span>
+								<span class="occupation">Diretor</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(3)">
+							<div class="photo"><img src="assets/img/team/foto-helena.jpg" alt=""><div class="number">3</div></div>
+							<div class="info">
+								<span class="name">Helena</span>
+								<span class="occupation">Gerente</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(4)">
+							<div class="photo"><img src="assets/img/team/foto-fernanda.jpg" alt=""><div class="number">4</div></div>
+							<div class="info">
+								<span class="name">Fernanda</span>
+								<span class="occupation">Desenvolvedora</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(5)">
+							<div class="photo"><img src="assets/img/team/foto-diego.jpg" alt=""><div class="number">5</div></div>
+							<div class="info">
+								<span class="name">Diego</span>
+								<span class="occupation">Desenvolvedor</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(6)">
+							<div class="photo"><img src="assets/img/team/foto-iris.jpg" alt=""><div class="number">6</div></div>
+							<div class="info">
+								<span class="name">Iris</span>
+								<span class="occupation">Desenvolvedora</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(7)">
+							<div class="photo"><img src="assets/img/team/foto-hugo.jpg" alt=""><div class="number">7</div></div>
+							<div class="info">
+								<span class="name">Hugo</span>
+								<span class="occupation">Desenvolvedor</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(8)">
+							<div class="photo"><img src="assets/img/team/foto-gustavo.jpg" alt=""><div class="number">8</div></div>
+							<div class="info">
+								<span class="name">Gustavo</span>
+								<span class="occupation">Desenvolvedor</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#" class="box box-link" onclick="carrega_cartao(9)">
+							<div class="photo"><img src="assets/img/team/foto-gabriel.jpg" alt=""><div class="number">9</div></div>
+							<div class="info">
+								<span class="name">Gabriel</span>
+								<span class="occupation">Desenvolvedor</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+
+	<!-- Style-->  
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dados.json"></script>
+
+</body>
+</html>
